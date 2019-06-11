@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Nike;
+  src: url("../fonts/TradeGothicForNike365.ttf") format("ttf"),
+  url("../fonts/TradeGothicForNike365.woff") format("woff");
+}
+
+@font-face {
+  font-family: Nike;
+  src: url("../fonts/TradeGothicForNike365Bold.ttf") format("ttf"),
+  url("../fonts/TradeGothicForNike365Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: nike-glyphs;
+  src: url("../fonts/nike-glyphs.woff") format("woff");
+}
+
+.icon {
+  font-size: 40px;
+  font-family: nike-glyphs;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon.jordan::before {
+  content: "\E627";
+}
+
+.icon.hurley::before {
+  content: "\E624";
+}
+
+.icon.converse::before {
+  content: "\E65B";
+}
+
+.icon.cart::before {
+  content: "\E60E";
+}
+
+.icon.swoosh::before {
+  content: "\E648";
+}
+
+.icon.search::before {
+  content: "\E63E";
+}
+
+.icon.twitter::before {
+  content: "\E64C";
+}
+
+.icon.facebook::before {
+  content: "\E614";
+}
+
+.icon.youtube::before {
+  content: "\E657";
+}
+
+.icon.instagram::before {
+  content: "\E626";
+}

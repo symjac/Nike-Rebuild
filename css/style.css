@@ -1,0 +1,426 @@
+/* RESET */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* default font */
+}
+
+body * {
+  font-family: inherit;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+/*UTILS*/
+
+.display-flex {
+  display: flex;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.triple-tile, .main-img-tile, .double-img-tile {
+  text-align: left;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+.hover-black a:hover {
+  color: #111;
+}
+.hover-white a:hover {
+  color: #fff;
+}
+.hover-gray a:hover {
+  color: #8d8d8d;
+}
+.border-right {
+  border-right: 1px solid #e5e5e5;
+}
+
+/*WRAPPERS*/
+
+.page-wrapper {
+  margin: 0 46px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-title-wrapper {
+  font-size: 25px;
+  width: 100%;
+  max-width: 1475px;
+  padding: 0 0 0 10px;
+  margin: 100px 0 25px 0;
+  justify-content: flex-start;
+}
+.footer-wrapper {
+  width: 100%;
+}
+
+/*NAV*/
+
+.navbar {
+  width: 100%;
+}
+.top-nav, .bottom-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*TOP NAV*/
+.top-nav {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  color: #8d8d8d;
+  font-size: 12px;
+}
+.top-nav-icon {
+  border-right: 1px solid #e5e5e5;
+  padding: 0 26px;
+}
+.icon {
+  line-height: 40px;
+}
+.icon.cart:hover {
+  transition: 0.25s;
+}
+.top-nav-icon-bar .jordan:hover {
+  color: #ce114f;
+}
+.icon.jordan {
+  font-size: 20px;
+}
+.icon.hurley {
+  font-size: 14px;
+}
+.icon.converse {
+  font-size: 12px;
+}
+.top-nav-links-bar img {
+  width: 15px;
+  height: 15px;
+}
+.icon.cart {
+  font-size:20px;
+}
+.top-nav-links-bar a {
+  padding: 12px;
+}
+
+/*BOTTOM NAV*/
+.bottom-nav {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bottom-nav-logo {
+  margin: 12px 20px;
+  width: 200px;
+}
+.icon.swoosh {
+  font-size: 28px;
+}
+.bottom-nav-links a {
+  color: #111;
+  font-size: 16px;
+  padding: 24px 20px;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a.nav-link:hover {
+  border-bottom: 2px solid #111;
+  border-top: 2px solid transparent;
+}
+.bottom-nav-search {
+  width: 200px;
+  border: 1px solid #e5e5e5;
+  padding-left: 15px;
+  margin: 20px;
+}
+.bottom-nav input {
+  font-size: 14px;
+  border: none;
+  margin-left:5px;
+}
+.bottom-nav input:focus {
+  outline: none;
+}
+.icon.search {
+  font-size: 20px;
+}
+
+/*DROPDOWN*/
+
+.dropdown-nav {
+  position: relative;
+  font-size: 12px;
+}
+.dropdown-nav a {
+  color: #111;
+}
+.dropdown-nav .dropdown {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+}
+.dropdown-nav .dropdown.show {
+  display: inherit;
+}
+.dropdown-list {
+  margin: 40px 0;
+  padding: 0 30px;
+}
+.dropdown-list .uppercase {
+  padding: 10px 0;
+}
+.dropdown-list a {
+  padding: 5px 0;
+}
+
+/*OFFER BAR*/
+.offer-bar {
+  width: 100%;
+  height: 60px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 12px 0;
+}
+.offer-bar h2{
+  font-size: 16px;
+  margin-right: 4px;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.offer-bar a {
+  font-size: 11px;
+  color: #111;
+  text-decoration: underline;
+}
+
+/*HEADER IMG*/
+.main-img-tile {
+  max-width: 1455px;
+  height: 550px;
+  width: 100%;
+  margin: 0 10px;
+  align-items: flex-end;
+  color: #fff;
+  background-image: url('../images/desktop/products/single/first-section/1.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0 35px;
+}
+.main-img-text {
+  display: inline-block;
+  margin: 50px;
+  width: 40%;
+}
+.white-cta-button {
+  border-radius: 50px;
+  background: #fff;
+  color: #111;
+  padding: 10px 25px;
+  font-size: 18px;
+  opacity: 1;
+}
+.white-cta-button:hover {
+  background: rgba(255,255,255, .6);
+  transition: 0.33s;
+}
+
+/*THREE TILE*/
+
+.triple-tile-container {
+  width: 100%;
+  max-width: 1475px;
+}
+.triple-tile {
+  width: 33%;
+  margin: 0px 10px;
+}
+.triple-tile img {
+  width: 100%;
+  border: none;
+}
+.triple-image:hover {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  transition: 0.5s;
+}
+.product-name {
+  margin-top: 10px;
+  color: #111;
+  width: 100%;
+}
+.product-type, .product-price {
+  color: #8d8d8d;
+  margin-top: 12px;
+  width: 100%;
+}
+
+/*DOUBLE TILE*/
+
+.double-img-tile {
+  max-width: 727.5px;
+  height: 550px;
+  width: 100%;
+  margin: 0 10px;
+  align-items: flex-end;
+  color: #fff;
+  background-image: url('../images/desktop/products/double/first-section/1.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+.double-img-tile:nth-child(2) {
+  background-image: url('../images/desktop/products/double/first-section/2.jpg');
+}
+.double-img-text {
+  margin: 40px;
+}
+.double-img-subtitle {
+  margin-bottom: 40px;
+}
+.double-img-section {
+  max-width: 1475px;
+  width: 100%;
+}
+
+
+/*SECOND TILES*/
+
+.second.main-img-tile {
+  background-image: url('../images/desktop/products/single/second-section/1.jpg');
+}
+.second .double-img-tile:nth-child(1) {
+  background-image: url('../images/desktop/products/double/second-section/1.jpg');
+}
+.second .double-img-tile:nth-child(2) {
+  background-image: url('../images/desktop/products/double/second-section/2.jpg');
+}
+.second .triple-tile:nth-child(1) {
+  background-image: url('../images/desktop/products/triple/second-section/1.jpg')
+}
+.second .triple-tile:nth-child(2) {
+  background-image: url('../images/desktop/products/triple/second-section/2.jpg')
+}
+.second .triple-tile:nth-child(3) {
+  background-image: url('../images/desktop/products/triple/second-section/3.jpg')
+}
+.second .triple-tile {
+  height: 400px;
+  background-size: cover;
+}
+.second .product-name {
+  margin: 50px 0 0 40px;
+}
+
+
+/*PAGE BTTM NAV*/
+
+.nav-column {
+  text-align: left;
+  margin: 100px 80px 60px;
+  flex-direction: column;
+  color:#8d8d8d;
+}
+.nav-column a {
+  margin: 12px 0;
+  font-size: 15px;
+}
+.bttm-nav-title {
+  color: #111;
+  margin-bottom: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #111;
+  color: #8d8d8d;
+  padding: 40px 40px 0 40px;
+  font-size: 12px;
+}
+.footer-wrapper {
+  max-width: 1475px;
+}
+.top-footer {
+  width: 100%;
+  justify-content: space-between;
+}
+.top-footer-column {
+  flex-direction: column;
+  margin: 0 150px 0 0;
+}
+.top-footer-social {
+  text-align: right;
+}
+.page-link,.subpage-link {
+  margin: 8px 0;
+}
+.page-link {
+  color: #fff;
+  font-size: 14px;
+}
+.footer-social-icon {
+  font-size: 30px;
+  margin: 0 5px;
+}
+.bottom-footer {
+  width: 100%;
+  border-top: 1px solid #222;
+  margin-top: 18px;
+  padding: 10px 0;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.bottom-footer-notes img {
+  width: 16px;
+  height: 16px;
+}
+.language {
+  color: #fff;
+  margin: 0 30px 0 7px;
+}
+.language img {
+  margin-right: 8px;
+}
+.footer-link {
+  margin: 0 15px;
+}
