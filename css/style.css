@@ -323,7 +323,7 @@ a.nav-link:hover {
 }
 
 
-/*SECOND TILES*/
+/*SECOND GROUP OF TILES*/
 
 .second.main-img-tile {
   background-image: url('../images/desktop/products/single/second-section/1.jpg');
@@ -370,7 +370,6 @@ a.nav-link:hover {
 }
 
 /*FOOTER*/
-
 footer {
   background-color: #111;
   color: #8d8d8d;
@@ -380,6 +379,8 @@ footer {
 .footer-wrapper {
   max-width: 1475px;
 }
+
+/*TOP FOOTER*/
 .top-footer {
   width: 100%;
   justify-content: space-between;
@@ -391,10 +392,10 @@ footer {
 .top-footer-social {
   text-align: right;
 }
-.page-link,.subpage-link {
+.top-footer-column a {
   margin: 8px 0;
 }
-.page-link {
+.top-footer-column .uppercase {
   color: #fff;
   font-size: 14px;
 }
@@ -402,6 +403,8 @@ footer {
   font-size: 30px;
   margin: 0 5px;
 }
+
+/*BOTTOM FOOTER*/
 .bottom-footer {
   width: 100%;
   border-top: 1px solid #222;
