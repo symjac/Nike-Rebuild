@@ -135,7 +135,8 @@ a {
   font-size:20px;
 }
 .top-nav-links-bar a {
-  padding: 12px;
+  padding: 13px;
+  border-bottom: 2px solid transparent;
 }
 
 /*BOTTOM NAV*/
@@ -154,12 +155,14 @@ a {
 .bottom-nav-links a {
   color: #111;
   font-size: 16px;
-  padding: 24px 20px;
   font-family: Nike, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-a.nav-link:hover {
+.bottom-nav-links .nav-link {
+  padding: 26px 20px;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
   border-bottom: 2px solid #111;
-  border-top: 2px solid transparent;
 }
 .bottom-nav-search {
   width: 200px;
